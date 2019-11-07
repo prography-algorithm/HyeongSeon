@@ -41,7 +41,6 @@ class Snake:
         self._locations = [(1, 1)]
         self.is_conflict = False
         self._direction_order = 0
-
     @property
     def head(self):
         return self._locations[-1]
@@ -83,5 +82,6 @@ class Snake:
             self._locations.pop(0)
         else:
             apples.remove(self.head)
+
 
 print(solution())
